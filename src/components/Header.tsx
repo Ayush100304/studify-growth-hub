@@ -15,13 +15,13 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
-      <div className="container mx-auto px-4 lg:px-6 h-20 md:h-24 flex items-center justify-between">
+      <div className="container mx-auto px-4 lg:px-6 h-24 md:h-28 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-3">
           <img 
             src="/lovable-uploads/d1f24f8d-8afa-4cbc-8bb6-d29d33e4f428.png" 
             alt="Studify Logo" 
-            className="h-16 w-auto md:h-20"
+            className="h-20 w-32 md:h-24 md:w-40 object-contain"
           />
         </div>
 
@@ -60,7 +60,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="absolute top-20 md:top-24 left-0 right-0 bg-background border-b border-border md:hidden">
+          <div className="absolute top-24 md:top-28 left-0 right-0 bg-background border-b border-border md:hidden">
             <nav className="flex flex-col p-4 gap-4">
               {navItems.map((item) => (
                 <a
